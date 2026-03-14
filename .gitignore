@@ -1,0 +1,55 @@
+# Build folders
+bin/
+obj/
+
+# User specific files
+*.user
+*.userosscache
+*.suo
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# NuGet packages
+*.nupkg
+packages/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Entity Framework
+Migrations/*.Designer.cs
+
+# Node (if frontend exists)
+node_modules/
+dist/
+build/
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Publish folder
+publish/
+
+# SQLite database files (if used locally)
+*.db
+*.sqlite
