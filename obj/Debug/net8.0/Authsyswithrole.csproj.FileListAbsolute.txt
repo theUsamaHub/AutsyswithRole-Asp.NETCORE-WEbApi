@@ -152,3 +152,4 @@ C:\Users\Usama Saleem\Downloads\Authsyswithrole\obj\Debug\net8.0\refint\Authsysw
 C:\Users\Usama Saleem\Downloads\Authsyswithrole\obj\Debug\net8.0\Authsyswithrole.pdb
 C:\Users\Usama Saleem\Downloads\Authsyswithrole\obj\Debug\net8.0\Authsyswithrole.genruntimeconfig.cache
 C:\Users\Usama Saleem\Downloads\Authsyswithrole\obj\Debug\net8.0\ref\Authsyswithrole.dll
+C:\Users\Usama Saleem\Downloads\Authsyswithrole\obj\Debug\net8.0\Authsyswithrole.sourcelink.json
