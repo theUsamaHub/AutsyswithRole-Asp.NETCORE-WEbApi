@@ -78,7 +78,7 @@ namespace Authsyswithrole.Controllers
             // Create role entity
             var role = new Role
             {
-                RoleName = dto.RoleName
+                RoleName = dto.RoleName.Trim()
             };
 
             // Add role to database
@@ -103,7 +103,7 @@ namespace Authsyswithrole.Controllers
             }
 
             // Update role name
-            role.RoleName = dto.RoleName;
+            role.RoleName = dto.RoleName.Trim();
 
             // Save changes to database
             await _context.SaveChangesAsync();

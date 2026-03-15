@@ -4,16 +4,18 @@ namespace Authsyswithrole.DTOs
 {
     public class RoleDto
     {
-        // Unique identifier of the role
-        // Not required when creating a role but useful when returning data
         public int RoleId { get; set; }
 
-        // Name of the role (Admin, User, Manager, etc.)
-        // Required to ensure role name is always provided
-        [Required]
+        // required value
+        [Required(ErrorMessage = "Role name is required")]
 
-        // Maximum length restriction to prevent oversized input
-        [StringLength(50)]
+        // remove whitespace-only values
+        [MinLength(3)]
+        [MaxLength(50)]
+
+        // restrict characters (letters only example)
+        [RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "Role name must contain only letters")]
+
         public string RoleName { get; set; }
     }
 }
