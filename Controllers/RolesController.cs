@@ -68,7 +68,7 @@ namespace Authsyswithrole.Controllers
         {
             // Check if role already exists
             var exists = await _context.Roles
-                .AnyAsync(r => r.Name == dto.Name);
+                .AnyAsync(r => r.RoleName == dto.RoleName);
 
             if (exists)
             {
@@ -78,7 +78,7 @@ namespace Authsyswithrole.Controllers
             // Create role entity
             var role = new Role
             {
-                Name = dto.Name
+                RoleName = dto.RoleName
             };
 
             // Add role to database
@@ -103,7 +103,7 @@ namespace Authsyswithrole.Controllers
             }
 
             // Update role name
-            role.Name = dto.Name;
+            role.RoleName = dto.RoleName;
 
             // Save changes to database
             await _context.SaveChangesAsync();
