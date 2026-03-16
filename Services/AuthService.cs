@@ -37,6 +37,21 @@ namespace Authsyswithrole.Services
         //}
         public async Task<AuthResponseDto> Register(RegisterDto dto)
         {
+            //added login for email existence and role existence
+
+            var emailExists = await _context.Users
+      .AnyAsync(x => x.Email == dto.Email);
+
+            if (emailExists)
+                throw new Exception("Email already registered");
+
+            var roleExists = await _context.Roles
+                .AnyAsync(x => x.RoleId == dto.RoleId);
+
+            if (!roleExists)
+                throw new Exception("Invalid role");
+
+            //end 
             var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
             var user = new User
