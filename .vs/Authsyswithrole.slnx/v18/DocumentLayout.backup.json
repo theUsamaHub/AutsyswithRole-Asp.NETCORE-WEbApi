@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,8 +50,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T06:47:47.956Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AuthResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\DTOs\\AuthResponseDto.cs",
               "RelativeDocumentMoniker": "DTOs\\AuthResponseDto.cs",
@@ -71,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RoleDto.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\DTOs\\RoleDto.cs",
               "RelativeDocumentMoniker": "DTOs\\RoleDto.cs",
@@ -84,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
@@ -97,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
@@ -109,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Models\\Role.cs",
@@ -134,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -146,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -165,7 +182,7 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAiwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwBsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T16:41:11.877Z",
               "EditorCaption": ""

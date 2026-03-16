@@ -71,21 +71,52 @@ namespace Authsyswithrole.Services
             };
         }
 
-        public async Task<string> Login(LoginDto dto)
+        //public async Task<string> Login(LoginDto dto)
+        //{
+        //    var user = await _context.Users
+        //                .Include(u => u.Role)
+        //                .FirstOrDefaultAsync(x => x.Email == dto.Email);
+
+        //    if (user == null)
+        //        return null;
+
+        //    bool valid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
+
+        //    if (!valid)
+        //        return null;
+
+        //    return _jwt.GenerateToken(user);
+        //}
+
+        public async Task<AuthResponseDto?> Login(LoginDto dto)
         {
             var user = await _context.Users
-                        .Include(u => u.Role)
-                        .FirstOrDefaultAsync(x => x.Email == dto.Email);
+                .Include(u => u.Role)
+                .FirstOrDefaultAsync(x => x.Email == dto.Email);
 
             if (user == null)
                 return null;
 
-            bool valid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
+            var valid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
 
             if (!valid)
                 return null;
 
-            return _jwt.GenerateToken(user);
+            var token = _jwt.GenerateToken(user);
+
+            return new AuthResponseDto
+            {
+                Token = token,
+                ExpiresIn = 7200,
+                User = new UserInfoDto
+                {
+                    Id = user.Id,
+                    Username = user.Username,
+                    Email = user.Email,
+                    RoleId = user.RoleId,
+                    Role = user.Role.RoleName
+                }
+            };
         }
     }
 }
