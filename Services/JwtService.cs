@@ -26,6 +26,8 @@ public string GenerateRefreshToken()
 
         return Convert.ToBase64String(randomNumber);
     }
+
+        //this genrate tokens for the first time when registers.
     public string GenerateToken(User user)
         {
             var claims = new[]
@@ -47,7 +49,7 @@ public string GenerateRefreshToken()
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddHours(2),
+                expires: DateTime.UtcNow.AddMinutes(15),
                 signingCredentials: creds
             );
 
