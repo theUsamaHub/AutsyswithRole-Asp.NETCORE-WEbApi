@@ -78,45 +78,19 @@ namespace Authsyswithrole.Controllers
                 Role = user.Role.RoleName
             });
         }
-        //[HttpGet("users")]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<IActionResult> GetAllUsers()
-        //{
-        //    var users = await _context.Users
-        //        .Include(u => u.Role)
-        //        .Select(u => new
-        //        {
-        //            u.Id,
-        //            u.Username,
-        //            u.Email,
-        //            u.RoleId,
-        //            Role = u.Role.RoleName
-        //        })
-        //        .ToListAsync();
 
-        //    return Ok(users);
-        //}
-        //[HttpGet("users/{id}")]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<IActionResult> GetUserById(int id)
-        //{
-        //    var user = await _context.Users
-        //        .Include(u => u.Role)
-        //        .Where(u => u.Id == id)
-        //        .Select(u => new
-        //        {
-        //            u.Id,
-        //            u.Username,
-        //            u.Email,
-        //            u.RoleId,
-        //            Role = u.Role.RoleName
-        //        })
-        //        .FirstOrDefaultAsync();
 
-        //    if (user == null)
-        //        return NotFound(new { message = "User not found" });
+        //added logout method
+        [HttpPost("logout")]
+        [Authorize]
+        public async Task<IActionResult> Logout(LogoutDto dto)
+        {
+            var result = await _auth.Logout(dto.RefreshToken);
 
-        //    return Ok(user);
-        //}
+            if (!result)
+                return BadRequest(new { message = "Invalid refresh token" });
+
+            return Ok(new { message = "Logged out successfully" });
+        }
     }
 }

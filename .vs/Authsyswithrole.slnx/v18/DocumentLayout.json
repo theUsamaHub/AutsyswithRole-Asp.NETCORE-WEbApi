@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\logoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\logoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LogoutDto.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\DTOs\\LogoutDto.cs",
               "RelativeDocumentMoniker": "DTOs\\LogoutDto.cs",
@@ -126,13 +126,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Services\\AuthService.cs",
               "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAcwM0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAcwMgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-16T06:47:47.956Z",
               "EditorCaption": ""
@@ -229,13 +229,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T16:41:11.877Z",
               "EditorCaption": ""
