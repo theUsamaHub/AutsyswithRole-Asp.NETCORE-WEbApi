@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\DTOs\\RegisterDto.cs",
               "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
@@ -168,13 +168,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T16:42:11.899Z",
               "EditorCaption": ""
