@@ -14,7 +14,7 @@ namespace Authsyswithrole.Services
             _context = context;
             _jwt = jwt;
         }
-
+        //added method for refresh
         public async Task<AuthResponseDto?> Refresh(string refreshToken)
         {
             var storedToken = await _context.RefreshTokens
