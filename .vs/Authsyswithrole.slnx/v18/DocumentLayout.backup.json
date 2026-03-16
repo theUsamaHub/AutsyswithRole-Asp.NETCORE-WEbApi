@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9463AD2-6E0A-915F-A363-3AFBDE426C35}|Authsyswithrole.csproj|c:\\users\\usama saleem\\downloads\\authsyswithrole\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "DTOs\\RoleDto.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\DTOs\\RoleDto.cs",
               "RelativeToolTip": "DTOs\\RoleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T13:30:40.888Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
               "ToolTip": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\RolesController.cs",
               "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwGkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAUwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T13:25:55.999Z",
               "EditorCaption": ""
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Models\\Role.cs",
@@ -141,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Usama Saleem\\Downloads\\Authsyswithrole\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
