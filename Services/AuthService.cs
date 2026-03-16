@@ -40,7 +40,7 @@ namespace Authsyswithrole.Services
             //added login for email existence and role existence
 
             var emailExists = await _context.Users
-      .AnyAsync(x => x.Email == dto.Email);
+              .AnyAsync(x => x.Email == dto.Email);
 
             if (emailExists)
                 throw new Exception("Email already registered");
@@ -69,12 +69,27 @@ namespace Authsyswithrole.Services
                     .Include(u => u.Role)
                     .FirstAsync(u => u.Email == dto.Email);
 
-            var token = _jwt.GenerateToken(user);
+            //added this logic for creating the refreshtoken
+            var accessToken = _jwt.GenerateToken(user);
+
+            var refreshToken = _jwt.GenerateRefreshToken();
+
+            var refreshTokenEntity = new RefreshToken
+            {
+                Token = refreshToken,
+                UserId = user.Id,
+                Expires = DateTime.UtcNow.AddDays(7),
+                IsRevoked = false
+            };
+
+            _context.RefreshTokens.Add(refreshTokenEntity);
+            await _context.SaveChangesAsync();
 
             return new AuthResponseDto
             {
-                Token = token,
-                ExpiresIn = 7200,
+                Token = accessToken,
+                RefreshToken = refreshToken,
+                ExpiresIn = 900,
                 User = new UserInfoDto
                 {
                     Id = user.Id,
@@ -85,6 +100,7 @@ namespace Authsyswithrole.Services
                 }
             };
         }
+        //end
 
         //public async Task<string> Login(LoginDto dto)
         //{
@@ -117,12 +133,23 @@ namespace Authsyswithrole.Services
             if (!valid)
                 return null;
 
-            var token = _jwt.GenerateToken(user);
+            var accessToken = _jwt.GenerateToken(user);
+            var refreshToken = _jwt.GenerateRefreshToken();
+
+            _context.RefreshTokens.Add(new RefreshToken
+            {
+                Token = refreshToken,
+                UserId = user.Id,
+                Expires = DateTime.UtcNow.AddDays(7)
+            });
+
+            await _context.SaveChangesAsync();
 
             return new AuthResponseDto
             {
-                Token = token,
-                ExpiresIn = 7200,
+                Token = accessToken,
+                RefreshToken = refreshToken,
+                ExpiresIn = 900,
                 User = new UserInfoDto
                 {
                     Id = user.Id,
