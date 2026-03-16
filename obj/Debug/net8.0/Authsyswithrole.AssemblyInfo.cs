@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Authsyswithrole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acdda3528281da19397ae7784381035e456d28d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e6fcb2a67a5611df90f5641490988833edf364c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Authsyswithrole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Authsyswithrole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
