@@ -15,7 +15,27 @@ namespace Authsyswithrole.Services
             _jwt = jwt;
         }
 
-        public async Task<string> Register(RegisterDto dto)
+        //public async Task<string> Register(RegisterDto dto)
+        //{
+        //    var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
+        //    var user = new User
+        //    {
+        //        Username = dto.Username,
+        //        Email = dto.Email,
+        //        Password = hash,
+        //        RoleId = dto.RoleId
+        //    };
+
+        //    _context.Users.Add(user);
+        //    await _context.SaveChangesAsync();
+
+        //    user = await _context.Users.Include(u => u.Role)
+        //                               .FirstAsync(u => u.Email == dto.Email);
+
+        //    return _jwt.GenerateToken(user);
+        //}
+        public async Task<AuthResponseDto> Register(RegisterDto dto)
         {
             var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
@@ -30,10 +50,25 @@ namespace Authsyswithrole.Services
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            user = await _context.Users.Include(u => u.Role)
-                                       .FirstAsync(u => u.Email == dto.Email);
+            user = await _context.Users
+                    .Include(u => u.Role)
+                    .FirstAsync(u => u.Email == dto.Email);
 
-            return _jwt.GenerateToken(user);
+            var token = _jwt.GenerateToken(user);
+
+            return new AuthResponseDto
+            {
+                Token = token,
+                ExpiresIn = 7200,
+                User = new UserInfoDto
+                {
+                    Id = user.Id,
+                    Username = user.Username,
+                    Email = user.Email,
+                    RoleId = user.RoleId,
+                    Role = user.Role.RoleName
+                }
+            };
         }
 
         public async Task<string> Login(LoginDto dto)
