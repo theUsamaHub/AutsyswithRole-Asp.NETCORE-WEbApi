@@ -189,5 +189,23 @@ namespace Authsyswithrole.Services
                 }
             };
         }
+
+
+
+        //added method for logout and revoke token
+        public async Task<bool> Logout(string refreshToken)
+        {
+            var storedToken = await _context.RefreshTokens
+                .FirstOrDefaultAsync(x => x.Token == refreshToken);
+
+            if (storedToken == null)
+                return false;
+
+            storedToken.IsRevoked = true;
+
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
     }
 }
