@@ -1,5 +1,8 @@
-﻿namespace Authsyswithrole.Models
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Authsyswithrole.Models
 {
+    [Index(nameof(Email), IsUnique = true)]
     public class User
     {
         public int Id { get; set; }
