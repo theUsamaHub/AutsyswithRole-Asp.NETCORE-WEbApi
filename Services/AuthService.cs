@@ -15,6 +15,34 @@ namespace Authsyswithrole.Services
             _jwt = jwt;
         }
 
+        public async Task<AuthResponseDto?> Refresh(string refreshToken)
+        {
+            var storedToken = await _context.RefreshTokens
+                .Include(x => x.User)
+                .ThenInclude(u => u.Role)
+                .FirstOrDefaultAsync(x => x.Token == refreshToken);
+
+            if (storedToken == null || storedToken.IsRevoked || storedToken.Expires < DateTime.UtcNow)
+                return null;
+
+            var newAccessToken = _jwt.GenerateToken(storedToken.User);
+
+            return new AuthResponseDto
+            {
+                Token = newAccessToken,
+                RefreshToken = refreshToken,
+                ExpiresIn = 900,
+                User = new UserInfoDto
+                {
+                    Id = storedToken.User.Id,
+                    Username = storedToken.User.Username,
+                    Email = storedToken.User.Email,
+                    RoleId = storedToken.User.RoleId,
+                    Role = storedToken.User.Role.RoleName
+                }
+            };
+        }
+
         //public async Task<string> Register(RegisterDto dto)
         //{
         //    var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
@@ -100,7 +128,8 @@ namespace Authsyswithrole.Services
                 }
             };
         }
-        //end
+        
+        
 
         //public async Task<string> Login(LoginDto dto)
         //{
