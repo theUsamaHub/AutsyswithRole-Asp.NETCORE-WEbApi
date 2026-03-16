@@ -21,11 +21,25 @@ namespace Authsyswithrole.Controllers
             _context = context;
         }
 
+        //[HttpPost("register")]
+        //public async Task<IActionResult> Register(RegisterDto dto)
+        //{
+        //    var token = await _auth.Register(dto);
+        //    return Ok(new { token });
+        //}
+        //added logic
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDto dto)
         {
-            var token = await _auth.Register(dto);
-            return Ok(new { token });
+            try
+            {
+                var result = await _auth.Register(dto);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPost("login")]
