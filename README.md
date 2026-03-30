@@ -25,6 +25,7 @@ User login
 JWT access token generation
 Protected endpoint using JWT
 Current user identity endpoint (me)
+token refresh sys
 ```
 
 ---
